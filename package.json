@@ -1,0 +1,27 @@
+{
+  "name": "sauce-demo-playwright-ts",
+  "version": "1.0.0",
+  "description": "End-to-end automation test suite for Shopify Sauce Demo store using Playwright & TypeScript",
+  "author": "Ihsan",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:all": "playwright test",
+    "test:mobile": "playwright test --project=mobile-chrome",
+    "test:e2e": "playwright test tests/e2e",
+    "test:functional": "playwright test tests/functional",
+    "test:api": "playwright test tests/api",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "dotenv": "^18.0.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
