@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This repository is an automation testing portfolio designed to simulate real-world QA engineering practices on an active e-commerce application. Rather than using simplified "toy" web apps, this suite tests a live Shopify store running a legacy liquid theme (`Simple OLD`), handling real network latency, dynamic DOM updates, and Shopify Storefront REST APIs.
 
@@ -17,7 +17,7 @@ This repository is an automation testing portfolio designed to simulate real-wor
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```text
 ├── .github/
@@ -59,14 +59,14 @@ This repository is an automation testing portfolio designed to simulate real-wor
 
 ---
 
-## ⚡ Prerequisites
+## Prerequisites
 
 - **Node.js**: `v18.x` or higher (tested on Node v20/v24)
 - **npm**: `v9.x` or higher
 
 ---
 
-## 🚀 Cara Menjalankan Test (Execution Guide)
+## Cara Menjalankan Test (Execution Guide)
 
 ### 1. Clone & Install Dependencies
 ```bash
@@ -119,7 +119,7 @@ npm run test:report
 
 ---
 
-## 🧪 Test Coverage Matrix
+## Test Coverage Matrix
 
 | Test Suite | File | Focus Areas |
 | :--- | :--- | :--- |
@@ -132,7 +132,7 @@ npm run test:report
 
 ---
 
-## 💡 Technical Challenges & Solutions (Real-world QA Observations)
+## Technical Challenges & Solutions (Real-world QA Observations)
 
 1. **Shopify AJAX Cart Synchronization**
    - *Problem*: In Shopify legacy themes, clicking "Add to Cart" triggers an asynchronous AJAX POST to `/cart/add.js`. Navigating immediately or asserting elements causes test flakiness.
@@ -148,7 +148,7 @@ npm run test:report
 
 ---
 
-## ⚙️ CI/CD Pipeline
+## CI/CD Pipeline
 
 The test suite runs automatically on push and pull requests via **GitHub Actions** (`.github/workflows/playwright.yml`):
 - Runs clean dependency installation via `npm ci`.
@@ -157,7 +157,7 @@ The test suite runs automatically on push and pull requests via **GitHub Actions
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Ihsan** - Software Quality Assurance / Test Automation Engineer
 - Framework: Playwright Test Runner + TypeScript
